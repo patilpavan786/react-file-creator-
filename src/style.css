@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(46, 43, 43);
+  height: 100vh;
+  color: wheat;
+  padding: 2rem;
+}
+
+.folder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom : 1px solid white; */
+  width: max-content;
+  /* height: 9vh; */
+  font-size: 1.2rem;
+  padding: 0.4rem 0.5rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.folder:hover {
+  background-color: grey;
+}
+
+.add {
+  font-weight: bolder;
+  cursor: pointer;
+  /* border: 1px solid; */
+  padding: 0.1rem 0.5rem;
+  background-color: rgb(32, 21, 21);
+  color: white;
+}
+.add:hover {
+  /* border: 1px solid; */
+  background-color: yellow;
+  color: blue;
+}
+.add:active {
+  /* border: 1px solid; */
+  background-color: rgb(6, 8, 42);
+  color: rgb(255, 255, 255);
+}
+
+.files {
+  /* margin-top: 1rem; */
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  width: max-content;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
+  background-color: rgba(73, 71, 71, 0.7);
+  padding: 0.4rem 1rem;
+}
+.sub_file {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.1rem;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid; */
+}
+.sub_file .cross {
+  color: red;
+  border: 1px solid red;
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+}
+
+.cross:hover {
+  color: yellow;
+  border: 1px solid yellow;
+}
+.add_input {
+  display: flex;
+  margin-top: 1rem;
+}
+.add_input input {
+  font-size: 1.2rem;
+  /* width: 100%; */
+}
